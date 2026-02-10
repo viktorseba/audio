@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -79,29 +79,25 @@
 <h2>This is the title of the thesis which we dont know yet</h2>
 <div class="author">Jonas Myhre Schiøtt, Viktor Sebastian Petersen</div>
 
-<table>
+<table> 
   <tr>
     <th class="meta">Category</th>
     <th class="meta">Description</th>
 
-    <th>Sample 1</th>
-    <th>Sample 2</th>
-    <th>Sample 3</th>
-    <th>Sample 4</th>
-    <th>Sample 5</th>
-    <th>Sample 6</th>
-    <th>Sample 7</th>
-    <th>Sample 8</th>
+    <th>True</th>
+    <th>w=1.5</th>
+    <th>w=3.0</th>
+    <th>w=7.0</th>
   </tr>
 
   <!-- ROW 1 -->
   <tr>
-    <td class="meta">Wind</td>
-    <td class="meta">Outdoor ambience recordings</td>
+    <td class="meta">AudioCaps</td>
+    <td class="meta">839</td>
 
     <!-- Cell 1 -->
     <td>
-      <img src="audios/spec-ex.png" class="spectrogram">
+      <img src="w_exp/spec/51_gt_A_esc50.png" class="spectrogram">
       <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
       <audio id="a1">
         <source src="audios/catdog.wav" type="audio/wav">
@@ -110,7 +106,7 @@
 
     <!-- Cell 2 -->
     <td>
-      <img src="audios/spec-ex.png" class="spectrogram">
+      <img src="w_exp/spec/51_pred_A_esc50_low.png" class="spectrogram">
       <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
       <audio id="a1">
         <source src="audios/catdog.wav" type="audio/wav">
@@ -119,7 +115,7 @@
 
     <!-- Cell 3 -->
     <td>
-      <img src="audios/spec-ex.png" class="spectrogram">
+      <img src="w_exp/spec/51_pred_A_esc50_mid.png" class="spectrogram">
       <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
       <audio id="a1">
         <source src="audios/catdog.wav" type="audio/wav">
@@ -128,43 +124,7 @@
 
     <!-- Cell 4 -->
     <td>
-      <img src="audios/spec-ex.png" class="spectrogram">
-      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
-      <audio id="a1">
-        <source src="audios/catdog.wav" type="audio/wav">
-      </audio>
-    </td>
-
-    <!-- Cell 5 -->
-    <td>
-      <img src="audios/spec-ex.png" class="spectrogram">
-      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
-      <audio id="a1">
-        <source src="audios/catdog.wav" type="audio/wav">
-      </audio>
-    </td>
-
-    <!-- Cell 6 -->
-    <td>
-      <img src="audios/spec-ex.png" class="spectrogram">
-      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
-      <audio id="a1">
-        <source src="audios/catdog.wav" type="audio/wav">
-      </audio>
-    </td>
-
-    <!-- Cell 7 -->
-    <td>
-      <img src="audios/spec-ex.png" class="spectrogram">
-      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
-      <audio id="a1">
-        <source src="audios/catdog.wav" type="audio/wav">
-      </audio>
-    </td>
-
-    <!-- Cell 8 -->
-    <td>
-      <img src="audios/spec-ex.png" class="spectrogram">
+      <img src="w_exp/spec/51_pred_A_esc50_high.png" class="spectrogram">
       <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
       <audio id="a1">
         <source src="audios/catdog.wav" type="audio/wav">
@@ -174,12 +134,12 @@
 
   <!-- ROW 2 -->
   <tr>
-    <td class="meta">Storm</td>
-    <td class="meta">its all cats and dogs</td>
+    <td class="meta">ESC50</td>
+    <td class="meta">51</td>
 
     <!-- Cell 1 -->
     <td>
-      <img src="audios/spec-ex.png" class="spectrogram">
+      <img src="w_exp/spec/51_gt_B_esc50.png" class="spectrogram">
       <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
       <audio id="a1">
         <source src="audios/catdog.wav" type="audio/wav">
@@ -188,7 +148,7 @@
 
     <!-- Cell 2 -->
     <td>
-      <img src="audios/spec-ex.png" class="spectrogram">
+      <img src="w_exp/spec/51_pred_B_esc50_low.png" class="spectrogram">
       <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
       <audio id="a1">
         <source src="audios/catdog.wav" type="audio/wav">
@@ -197,7 +157,7 @@
 
     <!-- Cell 3 -->
     <td>
-      <img src="audios/spec-ex.png" class="spectrogram">
+      <img src="w_exp/spec/51_pred_B_esc50_mid.png" class="spectrogram">
       <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
       <audio id="a1">
         <source src="audios/catdog.wav" type="audio/wav">
@@ -206,43 +166,7 @@
 
     <!-- Cell 4 -->
     <td>
-      <img src="audios/spec-ex.png" class="spectrogram">
-      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
-      <audio id="a1">
-        <source src="audios/catdog.wav" type="audio/wav">
-      </audio>
-    </td>
-
-    <!-- Cell 5 -->
-    <td>
-      <img src="audios/spec-ex.png" class="spectrogram">
-      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
-      <audio id="a1">
-        <source src="audios/catdog.wav" type="audio/wav">
-      </audio>
-    </td>
-
-    <!-- Cell 6 -->
-    <td>
-      <img src="audios/spec-ex.png" class="spectrogram">
-      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
-      <audio id="a1">
-        <source src="audios/catdog.wav" type="audio/wav">
-      </audio>
-    </td>
-
-    <!-- Cell 7 -->
-    <td>
-      <img src="audios/spec-ex.png" class="spectrogram">
-      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
-      <audio id="a1">
-        <source src="audios/catdog.wav" type="audio/wav">
-      </audio>
-    </td>
-
-    <!-- Cell 8 -->
-    <td>
-      <img src="audios/spec-ex.png" class="spectrogram">
+      <img src="w_exp/spec/51_pred_B_esc50_high.png" class="spectrogram">
       <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
       <audio id="a1">
         <source src="audios/catdog.wav" type="audio/wav">
@@ -250,6 +174,47 @@
     </td>
   </tr>
 
+  <!-- ROW 3 -->
+  <tr>
+    <td class="meta">ESC50</td>
+    <td class="meta">51</td>
+
+    <!-- Cell 1 -->
+    <td>
+      <img src="w_exp/spec/51_gt_mix_esc50.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
+        <source src="audios/catdog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 2 -->
+    <td>
+      <img src="w_exp/spec/51_pred_mix_esc50_low.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
+        <source src="audios/catdog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 3 -->
+    <td>
+      <img src="w_exp/spec/51_pred_mix_esc50_mid.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
+        <source src="audios/catdog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 4 -->
+    <td>
+      <img src="w_exp/spec/51_pred_mix_esc50_high.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
+        <source src="audios/catdog.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
 </table>
 
 <script>
