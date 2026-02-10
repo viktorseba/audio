@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Audio Portfolio</title>
+  <title>Audio Samples</title>
   <style>
     body {
       font-family: Arial;
@@ -39,20 +39,20 @@
 
   <tr>
     <td>Sample 1</td>
-    <td>Podcast intro</td>
+    <td>Catdog</td>
     <td>
       <audio controls>
-        <source src="audio/sample1.mp3" type="audio/mpeg">
+        <source src="catdog.wav" type="audio/wav">
       </audio>
     </td>
   </tr>
 
   <tr>
     <td>Sample 2</td>
-    <td>Sound design</td>
+    <td>Also catdog</td>
     <td>
       <audio controls>
-        <source src="audio/sample2.mp3" type="audio/mpeg">
+        <source src="catdog.wav" type="audio/wav">
       </audio>
     </td>
   </tr>
