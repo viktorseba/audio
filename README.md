@@ -2,17 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Audio Portfolio</title>
+  <title>Audio Spectrogram Library</title>
 
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      padding: 40px;
+      background: #f4f4f4;
+      padding: 30px;
     }
 
     h1 {
-      margin-bottom: 20px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-weight: normal;
+      color: #555;
+    }
+
+    .author {
+      margin-bottom: 30px;
+      font-style: italic;
+      color: #777;
     }
 
     table {
@@ -22,9 +34,10 @@
     }
 
     th, td {
-      padding: 12px;
-      border-bottom: 1px solid #ddd;
-      text-align: left;
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      vertical-align: top;
     }
 
     th {
@@ -32,17 +45,29 @@
       color: white;
     }
 
-    button.audio-btn {
-      font-size: 18px;
-      padding: 6px 10px;
+    .meta {
+      text-align: left;
+      min-width: 160px;
+    }
+
+    .spectrogram {
+      width: 100%;
+      max-width: 180px;
+      display: block;
+      margin: 0 auto 6px auto;
+    }
+
+    .audio-btn {
+      font-size: 16px;
+      padding: 5px 10px;
       cursor: pointer;
       border: none;
       background: #222;
       color: white;
-      border-radius: 6px;
+      border-radius: 5px;
     }
 
-    button.audio-btn:hover {
+    .audio-btn:hover {
       background: #444;
     }
   </style>
@@ -50,43 +75,176 @@
 
 <body>
 
-<h1>My Audio Samples</h1>
+<h1>Master thesis | Audio Samples</h1>
+<h2>This is the title of the thesis which we dont know yet</h2>
+<div class="author">Jonas Myhre Schiøtt, Viktor Sebastian Petersen</div>
 
 <table>
   <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th>Play</th>
+    <th class="meta">Category</th>
+    <th class="meta">Description</th>
+
+    <th>Sample 1</th>
+    <th>Sample 2</th>
+    <th>Sample 3</th>
+    <th>Sample 4</th>
+    <th>Sample 5</th>
+    <th>Sample 6</th>
+    <th>Sample 7</th>
+    <th>Sample 8</th>
   </tr>
 
+  <!-- ROW 1 -->
   <tr>
-    <td>Explosion</td>
-    <td>Game SFX</td>
+    <td class="meta">Wind</td>
+    <td class="meta">Outdoor ambience recordings</td>
+
+    <!-- Cell 1 -->
     <td>
-      <button class="audio-btn" onclick="toggleAudio(this, 'player1')">▶</button>
-      <audio id="player1">
+      <img src="audios/spec-ex.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
+        <source src="audios/catdog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 2 -->
+    <td>
+      <img src="audios/spec-ex.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
+        <source src="audios/catdog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 3 -->
+    <td>
+      <img src="audios/spec-ex.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
+        <source src="audios/catdog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 4 -->
+    <td>
+      <img src="audios/spec-ex.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
+        <source src="audios/catdog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 5 -->
+    <td>
+      <img src="audios/spec-ex.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
+        <source src="audios/catdog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 6 -->
+    <td>
+      <img src="audios/spec-ex.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
+        <source src="audios/catdog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 7 -->
+    <td>
+      <img src="audios/spec-ex.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
+        <source src="audios/catdog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 8 -->
+    <td>
+      <img src="audios/spec-ex.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
         <source src="audios/catdog.wav" type="audio/wav">
       </audio>
     </td>
   </tr>
-
+  
+  <!-- ROW 2 -->
   <tr>
-    <td>Ambient Wind</td>
-    <td>Background atmosphere</td>
+    <td class="meta">Storm</td>
+    <td class="meta">its all cats and dogs</td>
+
+    <!-- Cell 1 -->
     <td>
-      <button class="audio-btn" onclick="toggleAudio(this, 'player2')">▶</button>
-      <audio id="player2">
+      <img src="audios/spec-ex.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
         <source src="audios/catdog.wav" type="audio/wav">
       </audio>
     </td>
-  </tr>
 
-  <tr>
-    <td>Footsteps</td>
-    <td>Foley recording</td>
+    <!-- Cell 2 -->
     <td>
-      <button class="audio-btn" onclick="toggleAudio(this, 'player3')">▶</button>
-      <audio id="player3">
+      <img src="audios/spec-ex.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
+        <source src="audios/catdog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 3 -->
+    <td>
+      <img src="audios/spec-ex.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
+        <source src="audios/catdog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 4 -->
+    <td>
+      <img src="audios/spec-ex.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
+        <source src="audios/catdog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 5 -->
+    <td>
+      <img src="audios/spec-ex.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
+        <source src="audios/catdog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 6 -->
+    <td>
+      <img src="audios/spec-ex.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
+        <source src="audios/catdog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 7 -->
+    <td>
+      <img src="audios/spec-ex.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
+        <source src="audios/catdog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 8 -->
+    <td>
+      <img src="audios/spec-ex.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
         <source src="audios/catdog.wav" type="audio/wav">
       </audio>
     </td>
@@ -98,21 +256,17 @@
 function toggleAudio(btn, id) {
   const audio = document.getElementById(id);
 
-  // pause all other audio
+  // stop all other audio
   document.querySelectorAll("audio").forEach(a => {
-    if (a !== audio) {
-      a.pause();
-    }
+    if (a !== audio) a.pause();
   });
 
   // reset all buttons
   document.querySelectorAll(".audio-btn").forEach(b => {
-    if (b !== btn) {
-      b.textContent = "▶";
-    }
+    if (b !== btn) b.textContent = "▶";
   });
 
-  // toggle selected audio
+  // toggle selected
   if (audio.paused) {
     audio.play();
     btn.textContent = "⏸";
