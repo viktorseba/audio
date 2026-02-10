@@ -260,6 +260,7 @@ function toggleAudio(btn, id) {
   document.querySelectorAll("audio").forEach(a => {
     if (a !== audio) {
       a.pause();
+      a.currentTime = 0;
     }
   });
 
@@ -273,9 +274,10 @@ function toggleAudio(btn, id) {
   // play/pause toggle
   if (audio.paused) {
     audio.play();
-    btn.textContent = "⏸";
+    btn.textContent = "⏹";
   } else {
     audio.pause();
+    audio.currentTime = 0;
     btn.textContent = "▶";
   }
 
