@@ -41,7 +41,7 @@
     <td>Catdog</td>
     <td>
       <audio controls>
-        <source src="catdog.wav" type="audio/wav">
+        <source src="audios/catdog.wav" type="audio/wav">
       </audio>
     </td>
   </tr>
@@ -51,7 +51,7 @@
     <td>Also catdog</td>
     <td>
       <audio controls>
-        <source src="catdog.wav" type="audio/wav">
+        <source src="audios/catdog.wav" type="audio/wav">
       </audio>
     </td>
   </tr>
