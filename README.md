@@ -84,7 +84,7 @@
     <th class="meta">Category</th>
     <th class="meta">Description</th>
 
-    <th>True</th>
+    <th>Ground Truth</th>
     <th>w=1.5</th>
     <th>w=3.0</th>
     <th>w=7.0</th>
@@ -92,8 +92,8 @@
 
   <!-- ROW 1 -->
   <tr>
-    <td class="meta">AudioCaps</td>
-    <td class="meta">839</td>
+    <td class="meta">AudioCaps 839</td>
+    <td class="meta">Source 1</td>
 
     <!-- Cell 1 -->
     <td>
@@ -134,8 +134,8 @@
 
   <!-- ROW 2 -->
   <tr>
-    <td class="meta">ESC50</td>
-    <td class="meta">51</td>
+    <td class="meta">AudioCaps 839</td>
+    <td class="meta">Source 2</td>
 
     <!-- Cell 1 -->
     <td>
@@ -176,8 +176,8 @@
 
   <!-- ROW 3 -->
   <tr>
-    <td class="meta">ESC50</td>
-    <td class="meta">51</td>
+    <td class="meta">AudioCaps 839</td>
+    <td class="meta">Source 1 + Source 2</td>
 
     <!-- Cell 1 -->
     <td>
