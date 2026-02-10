@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Audio Samples</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 30px;
+    }
+
+    h1 {
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-weight: normal;
+      color: #555;
+    }
+
+    .author {
+      margin-bottom: 30px;
+      font-style: italic;
+      color: #777;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      vertical-align: top;
+    }
+
+    th {
+      background: #222;
+      color: white;
+    }
+
+    .meta {
+      text-align: left;
+      min-width: 160px;
+    }
+
+    .spectrogram {
+      width: 100%;
+      max-width: 180px;
+      display: block;
+      margin: 0 auto 6px auto;
+    }
+
+    .audio-btn {
+      font-size: 16px;
+      padding: 5px 10px;
+      cursor: pointer;
+      border: none;
+      background: #222;
+      color: white;
+      border-radius: 5px;
+    }
+
+    .audio-btn:hover {background: #444;}
+    ul {list-style-type: none; padding: 0; }
+    li {margin: 10px 0; }
+    a {text-decoration: none; color: #007bff; }
+    a:hover {text-decoration: underline; }
+  </style>
+</head>
+
+<body>
+
+<h1>Master Thesis | Audio Samples</h1>
+<p>This is the title of the thesis which we dont know yet</p>
+<div class="author">Jonas Myhre Schiøtt, Viktor Sebastian Petersen</div>
+
+<ul>
+        <li><a href="index.html">Back</a></li>
+</ul>
+
+<table> 
+  <tr>
+    <th>alarm clock</th>
+    <th>car horn</th>
+    <th>cat</th>
+    <th>coughing</th>
+    <th>thunder</th>
+    <th>dog</th>
+    <th>bass</th>
+    <th>violin</th>
+  </tr>
+
+  <!-- ROW 1 -->
+  <tr>
+
+    <!-- Cell 1 -->
+    <td>
+      <img src="w_exp/spec/839_gt_A_audiocaps.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
+        <source src="w_exp/wave/839_gt_A_audiocaps.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 2 -->
+    <td>
+      <img src="w_exp/spec/839_pred_A_audiocaps_low.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a2')">▶</button>
+      <audio id="a2">
+        <source src="w_exp/wave/839_pred_A_audiocaps_low.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 3 -->
+    <td>
+      <img src="w_exp/spec/839_pred_A_audiocaps_mid.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a3')">▶</button>
+      <audio id="a3">
+        <source src="w_exp/wave/839_pred_A_audiocaps_mid.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 4 -->
+    <td>
+      <img src="w_exp/spec/839_pred_A_audiocaps_high.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a4')">▶</button>
+      <audio id="a4">
+        <source src="w_exp/wave/839_pred_A_audiocaps_high.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 5 -->
+    <td>
+      <img src="w_exp/spec/839_pred_A_audiocaps_ours.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a5')">▶</button>
+      <audio id="a5">
+        <source src="w_exp/wave/839_pred_A_audiocaps_ours.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 6 -->
+    <td>
+      <img src="w_exp/spec/839_pred_A_audiocaps_ours.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a6')">▶</button>
+      <audio id="a6">
+        <source src="w_exp/wave/839_pred_A_audiocaps_ours.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 7 -->
+    <td>
+      <img src="w_exp/spec/839_pred_A_audiocaps_ours.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a7')">▶</button>
+      <audio id="a7">
+        <source src="w_exp/wave/839_pred_A_audiocaps_ours.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 8 -->
+    <td>
+      <img src="w_exp/spec/839_pred_A_audiocaps_ours.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a8')">▶</button>
+      <audio id="a8">
+        <source src="w_exp/wave/839_pred_A_audiocaps_ours.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+</table>
+
+<script>
+function toggleAudio(btn, id) {
+  const audio = document.getElementById(id);
+
+  // stop all other audio
+  document.querySelectorAll("audio").forEach(a => {
+    if (a !== audio) {
+      a.pause();
+      a.currentTime = 0;
+    }
+  });
+
+  // reset all buttons except current
+  document.querySelectorAll(".audio-btn").forEach(b => {
+    if (b !== btn) {
+      b.textContent = "▶";
+    }
+  });
+
+  // play/pause toggle
+  if (audio.paused) {
+    audio.play();
+    btn.textContent = "⏹";
+  } else {
+    audio.pause();
+    audio.currentTime = 0;
+    btn.textContent = "▶";
+  }
+
+  // when audio finishes → reset button to play
+  audio.onended = function() {
+    btn.textContent = "▶";
+  };
+}
+</script>
+
+</body>
+</html>
