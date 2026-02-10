@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Audio Spectrogram Library</title>
+  <title>Audio Samples</title>
 
   <style>
     body {
@@ -75,7 +75,7 @@
 
 <body>
 
-<h1>Master thesis | Audio Samples</h1>
+<h1>Master Thesis | Audio Samples</h1>
 <h2>This is the title of the thesis which we dont know yet</h2>
 <div class="author">Jonas Myhre Schiøtt, Viktor Sebastian Petersen</div>
 
@@ -171,7 +171,7 @@
       </audio>
     </td>
   </tr>
-  
+
   <!-- ROW 2 -->
   <tr>
     <td class="meta">Storm</td>
@@ -258,15 +258,19 @@ function toggleAudio(btn, id) {
 
   // stop all other audio
   document.querySelectorAll("audio").forEach(a => {
-    if (a !== audio) a.pause();
+    if (a !== audio) {
+      a.pause();
+    }
   });
 
-  // reset all buttons
+  // reset all buttons except current
   document.querySelectorAll(".audio-btn").forEach(b => {
-    if (b !== btn) b.textContent = "▶";
+    if (b !== btn) {
+      b.textContent = "▶";
+    }
   });
 
-  // toggle selected
+  // play/pause toggle
   if (audio.paused) {
     audio.play();
     btn.textContent = "⏸";
@@ -274,6 +278,11 @@ function toggleAudio(btn, id) {
     audio.pause();
     btn.textContent = "▶";
   }
+
+  // when audio finishes → reset button to play
+  audio.onended = function() {
+    btn.textContent = "▶";
+  };
 }
 </script>
 
