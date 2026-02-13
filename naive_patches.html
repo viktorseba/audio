@@ -87,88 +87,119 @@
 
 <table> 
   <tr>
-    <th>alarm clock</th>
-    <th>car horn</th>
-    <th>cat</th>
-    <th>coughing</th>
-    <th>thunder</th>
-    <th>dog</th>
-    <th>bass</th>
-    <th>violin</th>
+    <th class="meta">Figure 5.x</th>
+    <th>cat / dog</th>
+    <th>car / thunder</th>
+    <th>bass / violin</th>
   </tr>
 
   <!-- ROW 1 -->
   <tr>
 
+    <td class="meta">Patches</td>
+
     <!-- Cell 1 -->
     <td>
-      <img src="toydata/alarm_clock.png" class="spectrogram">
+      <img src="naivePatches/naive_catdog.png" class="spectrogram">
+    </td>
+
+    <!-- Cell 2 -->
+    <td>
+      <img src="naivePatches/naive_carthunder.png" class="spectrogram">
+    </td>
+
+    <!-- Cell 3 -->
+    <td>
+      <img src="naivePatches/naive_bassviolin.png" class="spectrogram">
+    </td>
+  </tr>
+
+  <!-- ROW 2 -->
+  <tr>
+
+    <td class="meta">Full Audio</td>
+
+    <!-- Cell 1 -->
+    <td>
       <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
       <audio id="a1">
-        <source src="toydata/alarm_clock.wav" type="audio/wav">
+        <source src="naivePatches/naive_catdog.wav" type="audio/wav">
       </audio>
     </td>
 
     <!-- Cell 2 -->
     <td>
-      <img src="toydata/car_horn.png" class="spectrogram">
-      <button class="audio-btn" onclick="toggleAudio(this, 'a2')">▶</button>
-      <audio id="a2">
-        <source src="toydata/car_horn.wav" type="audio/wav">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a4')">▶</button>
+      <audio id="a4">
+        <source src="naivePatches/naive_carthunder.wav" type="audio/wav">
       </audio>
     </td>
 
     <!-- Cell 3 -->
     <td>
-      <img src="toydata/cat.png" class="spectrogram">
-      <button class="audio-btn" onclick="toggleAudio(this, 'a3')">▶</button>
-      <audio id="a3">
-        <source src="toydata/cat.wav" type="audio/wav">
-      </audio>
-    </td>
-
-    <!-- Cell 4 -->
-    <td>
-      <img src="toydata/coughing.png" class="spectrogram">
-      <button class="audio-btn" onclick="toggleAudio(this, 'a4')">▶</button>
-      <audio id="a4">
-        <source src="toydata/coughing.wav" type="audio/wav">
-      </audio>
-    </td>
-
-    <!-- Cell 5 -->
-    <td>
-      <img src="toydata/thunder.png" class="spectrogram">
-      <button class="audio-btn" onclick="toggleAudio(this, 'a5')">▶</button>
-      <audio id="a5">
-        <source src="toydata/thunder.wav" type="audio/wav">
-      </audio>
-    </td>
-
-    <!-- Cell 6 -->
-    <td>
-      <img src="toydata/dog.png" class="spectrogram">
-      <button class="audio-btn" onclick="toggleAudio(this, 'a6')">▶</button>
-      <audio id="a6">
-        <source src="toydata/dog.wav" type="audio/wav">
-      </audio>
-    </td>
-
-    <!-- Cell 7 -->
-    <td>
-      <img src="toydata/bass.png" class="spectrogram">
       <button class="audio-btn" onclick="toggleAudio(this, 'a7')">▶</button>
       <audio id="a7">
-        <source src="toydata/bass.wav" type="audio/wav">
+        <source src="naivePatches/naive_bassviolin.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+
+  <!-- ROW 3 -->
+  <tr>
+
+    <td class="meta">Source 1</td>
+
+    <!-- Cell 1 -->
+    <td>
+      <button class="audio-btn" onclick="toggleAudio(this, 'a2')">▶</button>
+      <audio id="a2">
+        <source src="naivePatches/naive_cat.wav" type="audio/wav">
       </audio>
     </td>
 
-    <!-- Cell 8 -->
+    <!-- Cell 2 -->
     <td>
-      <img src="toydata/violin.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a5')">▶</button>
+      <audio id="a5">
+        <source src="naivePatches/naive_car.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 3 -->
+    <td>
       <button class="audio-btn" onclick="toggleAudio(this, 'a8')">▶</button>
       <audio id="a8">
-        <source src="toydata/violin.wav" type="audio/wav">
+        <source src="naivePatches/naive_bass.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+
+  <!-- ROW 4 -->
+  <tr>
+
+    <td class="meta">Source 2</td>
+
+    <!-- Cell 1 -->
+    <td>
+      <button class="audio-btn" onclick="toggleAudio(this, 'a3')">▶</button>
+      <audio id="a3">
+        <source src="naivePatches/naive_dog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 2 -->
+    <td>
+      <button class="audio-btn" onclick="toggleAudio(this, 'a6')">▶</button>
+      <audio id="a6">
+        <source src="naivePatches/naive_thunder.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 3 -->
+    <td>
+      <button class="audio-btn" onclick="toggleAudio(this, 'a9')">▶</button>
+      <audio id="a9">
+        <source src="naivePatches/naive_violin.wav" type="audio/wav">
       </audio>
     </td>
   </tr>
