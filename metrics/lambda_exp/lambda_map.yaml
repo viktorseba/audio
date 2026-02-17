@@ -1,0 +1,86 @@
+lambdas:
+  0:
+    recon_loss: 1.0
+    condition_regularizer: 0.1
+    soft_IOU: 0.05
+    energy_floor: 10.0
+  1:
+    recon_loss: 0.05
+    condition_regularizer: 0.1
+    soft_IOU: 0.05
+    energy_floor: 10.0
+  2:
+    recon_loss: 0.1
+    condition_regularizer: 0.1
+    soft_IOU: 0.05
+    energy_floor: 10.0
+  3:
+    recon_loss: 10.0
+    condition_regularizer: 0.1
+    soft_IOU: 0.05
+    energy_floor: 10.0
+  4:
+    recon_loss: 0.0
+    condition_regularizer: 0.1
+    soft_IOU: 0.05
+    energy_floor: 10.0
+  5:
+    recon_loss: 1.0
+    condition_regularizer: 0.05
+    soft_IOU: 0.05
+    energy_floor: 10.0
+  6:
+    recon_loss: 1.0
+    condition_regularizer: 0.1
+    soft_IOU: 0.05
+    energy_floor: 10.0
+  7:
+    recon_loss: 1.0
+    condition_regularizer: 10.0
+    soft_IOU: 0.05
+    energy_floor: 10.0
+  8:
+    recon_loss: 1.0
+    condition_regularizer: 0.0
+    soft_IOU: 0.05
+    energy_floor: 10.0
+  9:
+    recon_loss: 1.0
+    condition_regularizer: 0.1
+    soft_IOU: 0.1
+    energy_floor: 10.0
+  10:
+    recon_loss: 1.0
+    condition_regularizer: 0.1
+    soft_IOU: 1.0
+    energy_floor: 10.0
+  11:
+    recon_loss: 1.0
+    condition_regularizer: 0.1
+    soft_IOU: 10.0
+    energy_floor: 10.0
+  12:
+    recon_loss: 1.0
+    condition_regularizer: 0.1
+    soft_IOU: 0.0
+    energy_floor: 10.0
+  13:
+    recon_loss: 1.0
+    condition_regularizer: 0.1
+    soft_IOU: 0.05
+    energy_floor: 0.05
+  14:
+    recon_loss: 1.0
+    condition_regularizer: 0.1
+    soft_IOU: 0.05
+    energy_floor: 0.1
+  15:
+    recon_loss: 1.0
+    condition_regularizer: 0.1
+    soft_IOU: 0.05
+    energy_floor: 1.0
+  16:
+    recon_loss: 1.0
+    condition_regularizer: 0.1
+    soft_IOU: 0.05
+    energy_floor: 0.0
