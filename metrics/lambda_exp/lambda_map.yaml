@@ -31,7 +31,7 @@ lambdas:
     energy_floor: 10.0
   6:
     recon_loss: 1.0
-    condition_regularizer: 0.1
+    condition_regularizer: 1.0
     soft_IOU: 0.05
     energy_floor: 10.0
   7:
