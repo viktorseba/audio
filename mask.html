@@ -85,6 +85,272 @@
         <li><a href="index.html">Back</a></li>
 </ul>
 
+<table> 
+  <tr>
+    <th class="meta">Figure 7.x</th>
+    <th class="meta">Masking</th>
+
+    <th>2x2</th>
+    <th>4x4</th>
+    <th>16x16</th>
+    <th>64x64</th>
+  </tr>
+
+  <!-- ROW 1 -->
+  <tr>
+    <td class="meta">cat/dog</td>
+    <td class="meta">Source 1</td>
+
+    <!-- Cell 1 -->
+    <td>
+      <img src="mask_exp/2x2/spec_mask1_cat_dog.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
+        <source src="mask_exp/2x2/mask1_cat_dog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 2 -->
+    <td>
+      <img src="mask_exp/4x4/spec_mask1_cat_dog.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a2')">▶</button>
+      <audio id="a2">
+        <source src="mask_exp/4x4/mask1_cat_dog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 3 -->
+    <td>
+      <img src="mask_exp/16x16/spec_mask1_cat_dog.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a3')">▶</button>
+      <audio id="a3">
+        <source src="mask_exp/16x16/mask1_cat_dog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 4 -->
+    <td>
+      <img src="mask_exp/64x64/spec_mask1_cat_dog.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a4')">▶</button>
+      <audio id="a4">
+        <source src="mask_exp/64x64/mask1_cat_dog.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+
+  <!-- ROW 2 -->
+  <tr>
+    <td class="meta">cat/dog</td>
+    <td class="meta">Source 2</td>
+
+    <!-- Cell 1 -->
+    <td>
+      <img src="mask_exp/2x2/spec_mask2_cat_dog.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a5')">▶</button>
+      <audio id="a5">
+        <source src="mask_exp/2x2/mask2_cat_dog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 2 -->
+    <td>
+      <img src="mask_exp/4x4/spec_mask2_cat_dog.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a6')">▶</button>
+      <audio id="a6">
+        <source src="mask_exp/4x4/mask2_cat_dog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 3 -->
+    <td>
+      <img src="mask_exp/16x16/spec_mask2_cat_dog.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a7')">▶</button>
+      <audio id="a7">
+        <source src="mask_exp/16x16/mask2_cat_dog.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 4 -->
+    <td>
+      <img src="mask_exp/64x64/spec_mask2_cat_dog.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a8')">▶</button>
+      <audio id="a8">
+        <source src="mask_exp/64x64/mask2_cat_dog.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+
+  <!-- ROW 3 -->
+  <tr>
+    <td class="meta">car horn / thunder</td>
+    <td class="meta">Source 1</td>
+
+    <!-- Cell 1 -->
+    <td>
+      <img src="mask_exp/2x2/spec_mask1_car-horn_thunder.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a9')">▶</button>
+      <audio id="a9">
+        <source src="mask_exp/2x2/mask1_car-horn_thunder.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 2 -->
+    <td>
+      <img src="mask_exp/4x4/spec_mask1_car-horn_thunder.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a10')">▶</button>
+      <audio id="a10">
+        <source src="mask_exp/4x4/mask1_car-horn_thunder.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 3 -->
+    <td>
+      <img src="mask_exp/16x16/spec_mask1_car-horn_thunder.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a11')">▶</button>
+      <audio id="a11">
+        <source src="mask_exp/16x16/mask1_car-horn_thunder.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 4 -->
+    <td>
+      <img src="mask_exp/64x64/spec_mask1_car-horn_thunder.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a12')">▶</button>
+      <audio id="a12">
+        <source src="mask_exp/64x64/mask1_car-horn_thunder.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+
+  <!-- ROW 4 -->
+  <tr>
+    <td class="meta">car horn / thunder</td>
+    <td class="meta">Source 2</td>
+
+    <!-- Cell 1 -->
+    <td>
+      <img src="mask_exp/2x2/spec_mask2_car-horn_thunder.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a13')">▶</button>
+      <audio id="a13">
+        <source src="mask_exp/2x2/mask2_car-horn_thunder.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 2 -->
+    <td>
+      <img src="mask_exp/4x4/spec_mask2_car-horn_thunder.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a14')">▶</button>
+      <audio id="a14">
+        <source src="mask_exp/4x4/mask2_car-horn_thunder.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 3 -->
+    <td>
+      <img src="mask_exp/16x16/spec_mask2_car-horn_thunder.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a15')">▶</button>
+      <audio id="a15">
+        <source src="mask_exp/16x16/mask2_car-horn_thunder.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 4 -->
+    <td>
+      <img src="mask_exp/64x64/spec_mask2_car-horn_thunder.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a16')">▶</button>
+      <audio id="a16">
+        <source src="mask_exp/64x64/mask2_car-horn_thunder.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+
+  <!-- ROW 5 -->
+  <tr>
+    <td class="meta">violin / bass</td>
+    <td class="meta">Source 1</td>
+
+    <!-- Cell 1 -->
+    <td>
+      <img src="mask_exp/2x2/spec_mask1_violin_bass.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a17')">▶</button>
+      <audio id="a17">
+        <source src="mask_exp/2x2/mask1_violin_bass.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 2 -->
+    <td>
+      <img src="mask_exp/4x4/spec_mask1_violin_bass.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a18')">▶</button>
+      <audio id="a18">
+        <source src="mask_exp/4x4/mask1_violin_bass.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 3 -->
+    <td>
+      <img src="mask_exp/16x16/spec_mask1_violin_bass.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a19')">▶</button>
+      <audio id="a19">
+        <source src="mask_exp/16x16/mask1_violin_bass.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 4 -->
+    <td>
+      <img src="mask_exp/64x64/spec_mask1_violin_bass.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a20')">▶</button>
+      <audio id="a20">
+        <source src="mask_exp/64x64/mask1_violin_bass.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+
+  <!-- ROW 2 -->
+  <tr>
+    <td class="meta">violin / bass</td>
+    <td class="meta">Source 2</td>
+
+    <!-- Cell 1 -->
+    <td>
+      <img src="mask_exp/2x2/spec_mask2_violin_bass.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a21')">▶</button>
+      <audio id="a21">
+        <source src="mask_exp/2x2/mask2_violin_bass.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 2 -->
+    <td>
+      <img src="mask_exp/4x4/spec_mask2_violin_bass.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a22')">▶</button>
+      <audio id="a22">
+        <source src="mask_exp/4x4/mask2_violin_bass.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 3 -->
+    <td>
+      <img src="mask_exp/16x16/spec_mask2_violin_bass.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a23')">▶</button>
+      <audio id="a23">
+        <source src="mask_exp/16x16/mask2_violin_bass.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 4 -->
+    <td>
+      <img src="mask_exp/64x64/spec_mask2_violin_bass.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a24')">▶</button>
+      <audio id="a24">
+        <source src="mask_exp/64x64/mask2_violin_bass.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+
+  
+</table>
+
 <script>
 function toggleAudio(btn, id) {
   const audio = document.getElementById(id);
