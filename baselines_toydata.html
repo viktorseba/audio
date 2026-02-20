@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Audio Samples</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 30px;
+    }
+
+    h1 {
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-weight: normal;
+      color: #555;
+    }
+
+    .author {
+      margin-bottom: 30px;
+      font-style: italic;
+      color: #777;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      vertical-align: top;
+    }
+
+    th {
+      background: #222;
+      color: white;
+    }
+
+    .meta {
+      text-align: left;
+      min-width: 160px;
+    }
+
+    .spectrogram {
+      width: 100%;
+      max-width: 180px;
+      display: block;
+      margin: 0 auto 6px auto;
+    }
+
+    .audio-btn {
+      font-size: 16px;
+      padding: 5px 10px;
+      cursor: pointer;
+      border: none;
+      background: #222;
+      color: white;
+      border-radius: 5px;
+    }
+
+    .audio-btn:hover {background: #444;}
+    ul {list-style-type: none; padding: 0; }
+    li {margin: 10px 0; }
+    a {text-decoration: none; color: #007bff; }
+    a:hover {text-decoration: underline; }
+  </style>
+</head>
+
+<body>
+
+<h1>Master Thesis | Audio Samples</h1>
+<p>This is the title of the thesis which we dont know yet</p>
+<div class="author">Jonas Myhre Schiøtt, Viktor Sebastian Petersen</div>
+
+<ul>
+        <li><a href="index.html">Back</a></li>
+</ul>
+
+<table> 
+  <tr>
+    <th class="meta">Figure 6.6</th>
+    <th class="meta">Baseline Comparison</th>
+
+    <th>Ground Truth</th>
+    <th>NMF</th>
+    <th>AudioSep</th>
+    <th>DGMO</th>
+    <th>Ours</th>
+  </tr>
+
+  <!-- ROW 1 -->
+  <tr>
+    <td class="meta">AudioSet 5238</td>
+    <td class="meta">Source 1</td>
+
+    <!-- Cell 1 -->
+    <td>
+      <img src="baselines/5238_gt_A_audioset.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a1')">▶</button>
+      <audio id="a1">
+        <source src="baselines/5238_gt_A_audioset.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 2 -->
+    <td>
+      <img src="baselines/5238_pred_A_audioset_nmf.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a2')">▶</button>
+      <audio id="a2">
+        <source src="baselines/5238_pred_A_audioset_nmf.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 3 -->
+    <td>
+      <img src="baselines/5238_pred_A_audioset_audiosep.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a3')">▶</button>
+      <audio id="a3">
+        <source src="baselines/5238_pred_A_audioset_audiosep.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 4 -->
+    <td>
+      <img src="baselines/5238_pred_A_audioset_dgmo.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a4')">▶</button>
+      <audio id="a4">
+        <source src="baselines/5238_pred_A_audioset_dgmo.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 5 -->
+    <td>
+      <img src="baselines/5238_pred_A_audioset_ours.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a5')">▶</button>
+      <audio id="a5">
+        <source src="baselines/5238_pred_A_audioset_ours.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+
+  <!-- ROW 2 -->
+  <tr>
+    <td class="meta">AudioSet 5238</td>
+    <td class="meta">Source 2</td>
+
+    <!-- Cell 1 -->
+    <td>
+      <img src="baselines/5238_gt_B_audioset.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a6')">▶</button>
+      <audio id="a6">
+        <source src="baselines/5238_gt_B_audioset.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 2 -->
+    <td>
+      <img src="baselines/5238_pred_B_audioset_nmf.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a7')">▶</button>
+      <audio id="a7">
+        <source src="baselines/5238_pred_B_audioset_nmf.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 3 -->
+    <td>
+      <img src="baselines/5238_pred_B_audioset_audiosep.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a8')">▶</button>
+      <audio id="a8">
+        <source src="baselines/5238_pred_B_audioset_audiosep.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 4 -->
+    <td>
+      <img src="baselines/5238_pred_B_audioset_dgmo.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a9')">▶</button>
+      <audio id="a9">
+        <source src="baselines/5238_pred_B_audioset_dgmo.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 5 -->
+    <td>
+      <img src="baselines/5238_pred_B_audioset_ours.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a10')">▶</button>
+      <audio id="a10">
+        <source src="baselines/5238_pred_B_audioset_ours.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+
+  <!-- ROW 3 -->
+  <tr>
+    <td class="meta">AudioSet 5238</td>
+    <td class="meta">Source 1 <br>+<br> Source 2</td>
+
+    <!-- Cell 1 -->
+    <td>
+      <img src="baselines/5238_gt_mix_audioset.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a11')">▶</button>
+      <audio id="a11">
+        <source src="baselines/5238_gt_mix_audioset.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 2 -->
+    <td>
+      <img src="baselines/5238_pred_mix_audioset_nmf.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a12')">▶</button>
+      <audio id="a12">
+        <source src="baselines/5238_pred_mix_audioset_nmf.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 3 -->
+    <td>
+      <img src="baselines/5238_pred_mix_audioset_audiosep.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a13')">▶</button>
+      <audio id="a13">
+        <source src="baselines/5238_pred_mix_audioset_audiosep.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 4 -->
+    <td>
+      <img src="baselines/5238_pred_mix_audioset_dgmo.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a14')">▶</button>
+      <audio id="a14">
+        <source src="baselines/5238_pred_mix_audioset_dgmo.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 5 -->
+    <td>
+      <img src="baselines/5238_pred_mix_audioset_ours.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a15')">▶</button>
+      <audio id="a15">
+        <source src="baselines/5238_pred_mix_audioset_ours.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+  <!-- ROW 1 -->
+  <tr>
+    <td class="meta">ESC50 1309</td>
+    <td class="meta">Source 1</td>
+
+    <!-- Cell 1 -->
+    <td>
+      <img src="baselines/1309_gt_A_esc50.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a16')">▶</button>
+      <audio id="a16">
+        <source src="baselines/1309_gt_A_esc50.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 2 -->
+    <td>
+      <img src="baselines/1309_pred_A_esc50_nmf.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a17')">▶</button>
+      <audio id="a17">
+        <source src="baselines/1309_pred_A_esc50_nmf.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 3 -->
+    <td>
+      <img src="baselines/1309_pred_A_esc50_audiosep.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a18')">▶</button>
+      <audio id="a18">
+        <source src="baselines/1309_pred_A_esc50_audiosep.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 4 -->
+    <td>
+      <img src="baselines/1309_pred_A_esc50_dgmo.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a19')">▶</button>
+      <audio id="a19">
+        <source src="baselines/1309_pred_A_esc50_dgmo.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 5 -->
+    <td>
+      <img src="baselines/1309_pred_A_esc50_ours.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a20')">▶</button>
+      <audio id="a20">
+        <source src="baselines/1309_pred_A_esc50_ours.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+
+  <!-- ROW 2 -->
+  <tr>
+    <td class="meta">ESC50 1309</td>
+    <td class="meta">Source 2</td>
+
+    <!-- Cell 1 -->
+    <td>
+      <img src="baselines/1309_gt_B_esc50.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a21')">▶</button>
+      <audio id="a21">
+        <source src="baselines/1309_gt_B_esc50.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 2 -->
+    <td>
+      <img src="baselines/1309_pred_B_esc50_nmf.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a22')">▶</button>
+      <audio id="a22">
+        <source src="baselines/1309_pred_B_esc50_nmf.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 3 -->
+    <td>
+      <img src="baselines/1309_pred_B_esc50_audiosep.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a23')">▶</button>
+      <audio id="a23">
+        <source src="baselines/1309_pred_B_esc50_audiosep.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 4 -->
+    <td>
+      <img src="baselines/1309_pred_B_esc50_dgmo.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a24')">▶</button>
+      <audio id="a24">
+        <source src="baselines/1309_pred_B_esc50_dgmo.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 5 -->
+    <td>
+      <img src="baselines/1309_pred_B_esc50_ours.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a25')">▶</button>
+      <audio id="a25">
+        <source src="baselines/1309_pred_B_esc50_ours.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+
+  <!-- ROW 3 -->
+  <tr>
+    <td class="meta">ESC50 1309</td>
+    <td class="meta">Source 1 <br>+<br> Source 2</td>
+
+    <!-- Cell 1 -->
+    <td>
+      <img src="baselines/1309_gt_mix_esc50.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a26')">▶</button>
+      <audio id="a26">
+        <source src="baselines/1309_gt_mix_esc50.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 2 -->
+    <td>
+      <img src="baselines/1309_pred_mix_esc50_nmf.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a27')">▶</button>
+      <audio id="a27">
+        <source src="baselines/1309_pred_mix_esc50_nmf.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 3 -->
+    <td>
+      <img src="baselines/1309_pred_mix_esc50_audiosep.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a28')">▶</button>
+      <audio id="a28">
+        <source src="baselines/1309_pred_mix_esc50_audiosep.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 4 -->
+    <td>
+      <img src="baselines/1309_pred_mix_esc50_dgmo.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a29')">▶</button>
+      <audio id="a29">
+        <source src="baselines/1309_pred_mix_esc50_dgmo.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 5 -->
+    <td>
+      <img src="baselines/1309_pred_mix_esc50_ours.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a30')">▶</button>
+      <audio id="a30">
+        <source src="baselines/1309_pred_mix_esc50_ours.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+  <!-- ROW 1 -->
+  <tr>
+    <td class="meta">VGGSound 142</td>
+    <td class="meta">Source 1</td>
+
+    <!-- Cell 1 -->
+    <td>
+      <img src="baselines/142_gt_A_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a31')">▶</button>
+      <audio id="a31">
+        <source src="baselines/142_gt_A_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 2 -->
+    <td>
+      <img src="baselines/142_pred_A_vggsound_nmf.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a32')">▶</button>
+      <audio id="a32">
+        <source src="baselines/142_pred_A_vggsound_nmf.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 3 -->
+    <td>
+      <img src="baselines/142_pred_A_vggsound_audiosep.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a33')">▶</button>
+      <audio id="a33">
+        <source src="baselines/142_pred_A_vggsound_audiosep.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 4 -->
+    <td>
+      <img src="baselines/142_pred_A_vggsound_dgmo.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a34')">▶</button>
+      <audio id="a34">
+        <source src="baselines/142_pred_A_vggsound_dgmo.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 5 -->
+    <td>
+      <img src="baselines/142_pred_A_vggsound_ours.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a35')">▶</button>
+      <audio id="a35">
+        <source src="baselines/142_pred_A_vggsound_ours.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+
+  <!-- ROW 2 -->
+  <tr>
+    <td class="meta">VGGSound 142</td>
+    <td class="meta">Source 2</td>
+
+    <!-- Cell 1 -->
+    <td>
+      <img src="baselines/142_gt_B_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a36')">▶</button>
+      <audio id="a36">
+        <source src="baselines/142_gt_B_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 2 -->
+    <td>
+      <img src="baselines/142_pred_B_vggsound_nmf.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a37')">▶</button>
+      <audio id="a37">
+        <source src="baselines/142_pred_B_vggsound_nmf.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 3 -->
+    <td>
+      <img src="baselines/142_pred_B_vggsound_audiosep.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a38')">▶</button>
+      <audio id="a38">
+        <source src="baselines/142_pred_B_vggsound_audiosep.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 4 -->
+    <td>
+      <img src="baselines/142_pred_B_vggsound_dgmo.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a39')">▶</button>
+      <audio id="a39">
+        <source src="baselines/142_pred_B_vggsound_dgmo.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 5 -->
+    <td>
+      <img src="baselines/142_pred_B_vggsound_ours.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a40')">▶</button>
+      <audio id="a40">
+        <source src="baselines/142_pred_B_vggsound_ours.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+
+  <!-- ROW 3 -->
+  <tr>
+    <td class="meta">VGGSound 142</td>
+    <td class="meta">Source 1 <br>+<br> Source 2</td>
+
+    <!-- Cell 1 -->
+    <td>
+      <img src="baselines/142_gt_mix_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a41')">▶</button>
+      <audio id="a41">
+        <source src="baselines/142_gt_mix_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 2 -->
+    <td>
+      <img src="baselines/142_pred_mix_vggsound_nmf.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a42')">▶</button>
+      <audio id="a42">
+        <source src="baselines/142_pred_mix_vggsound_nmf.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 3 -->
+    <td>
+      <img src="baselines/142_pred_mix_vggsound_audiosep.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a43')">▶</button>
+      <audio id="a43">
+        <source src="baselines/142_pred_mix_vggsound_audiosep.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 4 -->
+    <td>
+      <img src="baselines/142_pred_mix_vggsound_dgmo.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a44')">▶</button>
+      <audio id="a44">
+        <source src="baselines/142_pred_mix_vggsound_dgmo.wav" type="audio/wav">
+      </audio>
+    </td>
+
+    <!-- Cell 5 -->
+    <td>
+      <img src="baselines/142_pred_mix_vggsound_ours.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, 'a45')">▶</button>
+      <audio id="a45">
+        <source src="baselines/142_pred_mix_vggsound_ours.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+</table>
+
+<script>
+function toggleAudio(btn, id) {
+  const audio = document.getElementById(id);
+
+  // stop all other audio
+  document.querySelectorAll("audio").forEach(a => {
+    if (a !== audio) {
+      a.pause();
+      a.currentTime = 0;
+    }
+  });
+
+  // reset all buttons except current
+  document.querySelectorAll(".audio-btn").forEach(b => {
+    if (b !== btn) {
+      b.textContent = "▶";
+    }
+  });
+
+  // play/pause toggle
+  if (audio.paused) {
+    audio.play();
+    btn.textContent = "⏹";
+  } else {
+    audio.pause();
+    audio.currentTime = 0;
+    btn.textContent = "▶";
+  }
+
+  // when audio finishes → reset button to play
+  audio.onended = function() {
+    btn.textContent = "▶";
+  };
+}
+</script>
+
+</body>
+</html>
