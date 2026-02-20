@@ -88,6 +88,7 @@
 <table> 
   <tr>
     <th class="meta">Figure x.x</th>
+    <th class="meta">Results</th>
 
     <th>Source 1</th>
     <th>Source 2</th>
@@ -97,6 +98,7 @@
   <!-- ROW 1 -->
   <tr>
     <td class="meta">VGGSound 25</td>
+    <td class="meta">Ground Truth</td>
 
     <!-- Source 1 -->
     <td>
@@ -104,11 +106,6 @@
       <button class="audio-btn" onclick="toggleAudio(this, '1-gt1')">▶</button>
       <audio id="1-gt1">
         <source src="opt_model/25_gt_A_vggsound.wav" type="audio/wav">
-      </audio>
-      <img src="opt_model/25_pred_A_vggsound_opt.png" class="spectrogram">
-      <button class="audio-btn" onclick="toggleAudio(this, '1-pred1')">▶</button>
-      <audio id="1-pred1">
-        <source src="opt_model/25_pred_A_vggsound_opt.wav" type="audio/wav">
       </audio>
     </td>
     <!-- Source 2 -->
@@ -118,11 +115,6 @@
       <audio id="1-gt2">
         <source src="opt_model/25_gt_B_vggsound.wav" type="audio/wav">
       </audio>
-      <img src="opt_model/25_pred_B_vggsound_opt.png" class="spectrogram">
-      <button class="audio-btn" onclick="toggleAudio(this, '1-pred2')">▶</button>
-      <audio id="1-pred2">
-        <source src="opt_model/25_pred_B_vggsound_opt.wav" type="audio/wav">
-      </audio>
     </td>
     <!-- Mixture -->
     <td>
@@ -131,10 +123,576 @@
       <audio id="1-gt-mix">
         <source src="opt_model/25_gt_mix_vggsound.wav" type="audio/wav">
       </audio>
+    </td>
+  </tr>
+  <!-- ROW 2 -->
+  <tr>
+    <td class="meta">VGGSound 25</td>
+    <td class="meta">Prediction</td>
+
+    <!-- Source 1 -->
+    <td>
+      <img src="opt_model/25_pred_A_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '1-pred1')">▶</button>
+      <audio id="1-pred1">
+        <source src="opt_model/25_pred_A_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Source 2 -->
+    <td>
+      <img src="opt_model/25_pred_B_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '1-pred2')">▶</button>
+      <audio id="1-pred2">
+        <source src="opt_model/25_pred_B_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Mixture -->
+    <td>
       <img src="opt_model/25_pred_mix_vggsound_opt.png" class="spectrogram">
       <button class="audio-btn" onclick="toggleAudio(this, '1-pred-mix')">▶</button>
       <audio id="1-pred-mix">
         <source src="opt_model/25_pred_mix_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+  <!-- ROW 1 -->
+  <tr>
+    <td class="meta">VGGSound 104</td>
+    <td class="meta">Ground Truth</td>
+
+    <!-- Source 1 -->
+    <td>
+      <img src="opt_model/104_gt_A_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '2-gt1')">▶</button>
+      <audio id="2-gt1">
+        <source src="opt_model/104_gt_A_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Source 2 -->
+    <td>
+      <img src="opt_model/104_gt_B_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '2-gt2')">▶</button>
+      <audio id="2-gt2">
+        <source src="opt_model/104_gt_B_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Mixture -->
+    <td>
+      <img src="opt_model/104_gt_mix_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '2-gt-mix')">▶</button>
+      <audio id="2-gt-mix">
+        <source src="opt_model/104_gt_mix_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+
+  <!-- ROW 2 -->
+  <tr>
+    <td class="meta">VGGSound 104</td>
+    <td class="meta">Prediction</td>
+
+    <!-- Source 1 -->
+    <td>
+      <img src="opt_model/104_pred_A_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '2-pred1')">▶</button>
+      <audio id="2-pred1">
+        <source src="opt_model/104_pred_A_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Source 2 -->
+    <td>
+      <img src="opt_model/104_pred_B_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '2-pred2')">▶</button>
+      <audio id="2-pred2">
+        <source src="opt_model/104_pred_B_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Mixture -->
+    <td>
+      <img src="opt_model/104_pred_mix_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '2-pred-mix')">▶</button>
+      <audio id="2-pred-mix">
+        <source src="opt_model/104_pred_mix_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+  <!-- ROW 1 -->
+  <tr>
+    <td class="meta">VGGSound 114</td>
+    <td class="meta">Ground Truth</td>
+
+    <!-- Source 1 -->
+    <td>
+      <img src="opt_model/114_gt_A_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '3-gt1')">▶</button>
+      <audio id="3-gt1">
+        <source src="opt_model/114_gt_A_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Source 2 -->
+    <td>
+      <img src="opt_model/114_gt_B_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '3-gt2')">▶</button>
+      <audio id="3-gt2">
+        <source src="opt_model/114_gt_B_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Mixture -->
+    <td>
+      <img src="opt_model/114_gt_mix_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '3-gt-mix')">▶</button>
+      <audio id="3-gt-mix">
+        <source src="opt_model/114_gt_mix_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+  <!-- ROW 2 -->
+  <tr>
+    <td class="meta">VGGSound 114</td>
+    <td class="meta">Prediction</td>
+
+    <!-- Source 1 -->
+    <td>
+      <img src="opt_model/114_pred_A_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '3-pred1')">▶</button>
+      <audio id="3-pred1">
+        <source src="opt_model/114_pred_A_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Source 2 -->
+    <td>
+      <img src="opt_model/114_pred_B_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '3-pred2')">▶</button>
+      <audio id="3-pred2">
+        <source src="opt_model/114_pred_B_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Mixture -->
+    <td>
+      <img src="opt_model/114_pred_mix_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '3-pred-mix')">▶</button>
+      <audio id="3-pred-mix">
+        <source src="opt_model/114_pred_mix_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+  <!-- ROW 1 -->
+  <tr>
+    <td class="meta">VGGSound 142</td>
+    <td class="meta">Ground Truth</td>
+
+    <!-- Source 1 -->
+    <td>
+      <img src="opt_model/142_gt_A_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '4-gt1')">▶</button>
+      <audio id="4-gt1">
+        <source src="opt_model/142_gt_A_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Source 2 -->
+    <td>
+      <img src="opt_model/142_gt_B_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '4-gt2')">▶</button>
+      <audio id="4-gt2">
+        <source src="opt_model/142_gt_B_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Mixture -->
+    <td>
+      <img src="opt_model/142_gt_mix_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '4-gt-mix')">▶</button>
+      <audio id="4-gt-mix">
+        <source src="opt_model/142_gt_mix_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+  <!-- ROW 2 -->
+  <tr>
+    <td class="meta">VGGSound 142</td>
+    <td class="meta">Prediction</td>
+
+    <!-- Source 1 -->
+    <td>
+      <img src="opt_model/142_pred_A_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '4-pred1')">▶</button>
+      <audio id="4-pred1">
+        <source src="opt_model/142_pred_A_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Source 2 -->
+    <td>
+      <img src="opt_model/142_pred_B_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '4-pred2')">▶</button>
+      <audio id="4-pred2">
+        <source src="opt_model/142_pred_B_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Mixture -->
+    <td>
+      <img src="opt_model/142_pred_mix_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '4-pred-mix')">▶</button>
+      <audio id="4-pred-mix">
+        <source src="opt_model/142_pred_mix_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+  <!-- ROW 1 -->
+  <tr>
+    <td class="meta">VGGSound 228</td>
+    <td class="meta">Ground Truth</td>
+
+    <!-- Source 1 -->
+    <td>
+      <img src="opt_model/228_gt_A_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '5-gt1')">▶</button>
+      <audio id="5-gt1">
+        <source src="opt_model/228_gt_A_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Source 2 -->
+    <td>
+      <img src="opt_model/228_gt_B_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '5-gt2')">▶</button>
+      <audio id="5-gt2">
+        <source src="opt_model/228_gt_B_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Mixture -->
+    <td>
+      <img src="opt_model/228_gt_mix_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '5-gt-mix')">▶</button>
+      <audio id="5-gt-mix">
+        <source src="opt_model/228_gt_mix_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+  <!-- ROW 2 -->
+  <tr>
+    <td class="meta">VGGSound 228</td>
+    <td class="meta">Prediction</td>
+
+    <!-- Source 1 -->
+    <td>
+      <img src="opt_model/228_pred_A_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '5-pred1')">▶</button>
+      <audio id="5-pred1">
+        <source src="opt_model/228_pred_A_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Source 2 -->
+    <td>
+      <img src="opt_model/228_pred_B_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '5-pred2')">▶</button>
+      <audio id="5-pred2">
+        <source src="opt_model/228_pred_B_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Mixture -->
+    <td>
+      <img src="opt_model/228_pred_mix_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '5-pred-mix')">▶</button>
+      <audio id="5-pred-mix">
+        <source src="opt_model/228_pred_mix_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+  <!-- ROW 1 -->
+  <tr>
+    <td class="meta">VGGSound 250</td>
+    <td class="meta">Ground Truth</td>
+
+    <!-- Source 1 -->
+    <td>
+      <img src="opt_model/250_gt_A_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '6-gt1')">▶</button>
+      <audio id="6-gt1">
+        <source src="opt_model/250_gt_A_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Source 2 -->
+    <td>
+      <img src="opt_model/250_gt_B_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '6-gt2')">▶</button>
+      <audio id="6-gt2">
+        <source src="opt_model/250_gt_B_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Mixture -->
+    <td>
+      <img src="opt_model/250_gt_mix_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '6-gt-mix')">▶</button>
+      <audio id="6-gt-mix">
+        <source src="opt_model/250_gt_mix_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+  <!-- ROW 2 -->
+  <tr>
+    <td class="meta">VGGSound 250</td>
+    <td class="meta">Prediction</td>
+
+    <!-- Source 1 -->
+    <td>
+      <img src="opt_model/250_pred_A_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '6-pred1')">▶</button>
+      <audio id="6-pred1">
+        <source src="opt_model/250_pred_A_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Source 2 -->
+    <td>
+      <img src="opt_model/250_pred_B_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '6-pred2')">▶</button>
+      <audio id="6-pred2">
+        <source src="opt_model/250_pred_B_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Mixture -->
+    <td>
+      <img src="opt_model/250_pred_mix_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '6-pred-mix')">▶</button>
+      <audio id="6-pred-mix">
+        <source src="opt_model/250_pred_mix_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+  <!-- ROW 1 -->
+  <tr>
+    <td class="meta">VGGSound 281</td>
+    <td class="meta">Ground Truth</td>
+
+    <!-- Source 1 -->
+    <td>
+      <img src="opt_model/281_gt_A_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '7-gt1')">▶</button>
+      <audio id="7-gt1">
+        <source src="opt_model/281_gt_A_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Source 2 -->
+    <td>
+      <img src="opt_model/281_gt_B_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '7-gt2')">▶</button>
+      <audio id="7-gt2">
+        <source src="opt_model/281_gt_B_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Mixture -->
+    <td>
+      <img src="opt_model/281_gt_mix_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '7-gt-mix')">▶</button>
+      <audio id="7-gt-mix">
+        <source src="opt_model/281_gt_mix_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+  <!-- ROW 2 -->
+  <tr>
+    <td class="meta">VGGSound 281</td>
+    <td class="meta">Prediction</td>
+
+    <!-- Source 1 -->
+    <td>
+      <img src="opt_model/281_pred_A_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '7-pred1')">▶</button>
+      <audio id="7-pred1">
+        <source src="opt_model/281_pred_A_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Source 2 -->
+    <td>
+      <img src="opt_model/281_pred_B_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '7-pred2')">▶</button>
+      <audio id="7-pred2">
+        <source src="opt_model/281_pred_B_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Mixture -->
+    <td>
+      <img src="opt_model/281_pred_mix_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '7-pred-mix')">▶</button>
+      <audio id="7-pred-mix">
+        <source src="opt_model/281_pred_mix_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+  <!-- ROW 1 -->
+  <tr>
+    <td class="meta">VGGSound 654</td>
+    <td class="meta">Ground Truth</td>
+
+    <!-- Source 1 -->
+    <td>
+      <img src="opt_model/654_gt_A_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '8-gt1')">▶</button>
+      <audio id="8-gt1">
+        <source src="opt_model/654_gt_A_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Source 2 -->
+    <td>
+      <img src="opt_model/654_gt_B_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '8-gt2')">▶</button>
+      <audio id="8-gt2">
+        <source src="opt_model/654_gt_B_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Mixture -->
+    <td>
+      <img src="opt_model/654_gt_mix_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '8-gt-mix')">▶</button>
+      <audio id="8-gt-mix">
+        <source src="opt_model/654_gt_mix_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+  <!-- ROW 2 -->
+  <tr>
+    <td class="meta">VGGSound 654</td>
+    <td class="meta">Prediction</td>
+
+    <!-- Source 1 -->
+    <td>
+      <img src="opt_model/654_pred_A_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '8-pred1')">▶</button>
+      <audio id="8-pred1">
+        <source src="opt_model/654_pred_A_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Source 2 -->
+    <td>
+      <img src="opt_model/654_pred_B_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '8-pred2')">▶</button>
+      <audio id="8-pred2">
+        <source src="opt_model/654_pred_B_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Mixture -->
+    <td>
+      <img src="opt_model/654_pred_mix_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '8-pred-mix')">▶</button>
+      <audio id="8-pred-mix">
+        <source src="opt_model/654_pred_mix_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+  <!-- ROW 1 -->
+  <tr>
+    <td class="meta">VGGSound 754</td>
+    <td class="meta">Ground Truth</td>
+
+    <!-- Source 1 -->
+    <td>
+      <img src="opt_model/754_gt_A_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '9-gt1')">▶</button>
+      <audio id="9-gt1">
+        <source src="opt_model/754_gt_A_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Source 2 -->
+    <td>
+      <img src="opt_model/754_gt_B_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '9-gt2')">▶</button>
+      <audio id="9-gt2">
+        <source src="opt_model/754_gt_B_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Mixture -->
+    <td>
+      <img src="opt_model/754_gt_mix_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '9-gt-mix')">▶</button>
+      <audio id="9-gt-mix">
+        <source src="opt_model/754_gt_mix_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+  <!-- ROW 2 -->
+  <tr>
+    <td class="meta">VGGSound 754</td>
+    <td class="meta">Prediction</td>
+
+    <!-- Source 1 -->
+    <td>
+      <img src="opt_model/754_pred_A_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '9-pred1')">▶</button>
+      <audio id="9-pred1">
+        <source src="opt_model/754_pred_A_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Source 2 -->
+    <td>
+      <img src="opt_model/754_pred_B_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '9-pred2')">▶</button>
+      <audio id="9-pred2">
+        <source src="opt_model/754_pred_B_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Mixture -->
+    <td>
+      <img src="opt_model/754_pred_mix_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '9-pred-mix')">▶</button>
+      <audio id="9-pred-mix">
+        <source src="opt_model/754_pred_mix_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+  <!-- ROW 1 -->
+  <tr>
+    <td class="meta">VGGSound 759</td>
+    <td class="meta">Ground Truth</td>
+
+    <!-- Source 1 -->
+    <td>
+      <img src="opt_model/759_gt_A_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '10-gt1')">▶</button>
+      <audio id="10-gt1">
+        <source src="opt_model/759_gt_A_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Source 2 -->
+    <td>
+      <img src="opt_model/759_gt_B_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '10-gt2')">▶</button>
+      <audio id="10-gt2">
+        <source src="opt_model/759_gt_B_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Mixture -->
+    <td>
+      <img src="opt_model/759_gt_mix_vggsound.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '10-gt-mix')">▶</button>
+      <audio id="10-gt-mix">
+        <source src="opt_model/759_gt_mix_vggsound.wav" type="audio/wav">
+      </audio>
+    </td>
+  </tr>
+  <!-- ROW 2 -->
+  <tr>
+    <td class="meta">VGGSound 759</td>
+    <td class="meta">Prediction</td>
+
+    <!-- Source 1 -->
+    <td>
+      <img src="opt_model/759_pred_A_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '10-pred1')">▶</button>
+      <audio id="10-pred1">
+        <source src="opt_model/759_pred_A_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Source 2 -->
+    <td>
+      <img src="opt_model/759_pred_B_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '10-pred2')">▶</button>
+      <audio id="10-pred2">
+        <source src="opt_model/759_pred_B_vggsound_opt.wav" type="audio/wav">
+      </audio>
+    </td>
+    <!-- Mixture -->
+    <td>
+      <img src="opt_model/759_pred_mix_vggsound_opt.png" class="spectrogram">
+      <button class="audio-btn" onclick="toggleAudio(this, '10-pred-mix')">▶</button>
+      <audio id="10-pred-mix">
+        <source src="opt_model/759_pred_mix_vggsound_opt.wav" type="audio/wav">
       </audio>
     </td>
   </tr>
